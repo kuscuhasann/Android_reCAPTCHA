@@ -6,13 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageViewRecaptcha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:contentDescription="@null"
+        android:src="@drawable/recapcha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Ben robot değilim"
+        android:text="@string/recapcha_checkbox_text"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewRecaptcha"
+        app:layout_constraintStart_toStartOf="@+id/imageViewRecaptcha"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewRecaptcha" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidreCAPTCHA</string>
+    <string name="recapcha_checkbox_text">Ben robot değilim</string>
 </resources>
